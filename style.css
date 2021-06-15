@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom,#68eacc 0%, #497be8 100%);
+}
+
+.wrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+    padding: 25px;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.inputField{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin: 16px 0;
+    justify-content: space-around;
+}
+
+.inputField input{
+    height: 100%;
+    width: 85%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding-left: 14px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.inputField button{
+    width: 54px;
+    height: 100%;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    background: #8F49E2;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.todoList{
+    list-style: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.todoList li{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 14px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList li span {
+    position: absolute;
+    right: -54px;
+    color: #fff;
+    background-color: #e74c3c;
+    width: 54px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.todoList li:hover span{
+    right: 0;
+}
+
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    /* height: 40px; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    cursor: default;
+}
+
+/* .wrapper .footer span{
+    height: 100%;
+    line-height: 40px;
+    cursor: default;
+
+} */
+
+.wrapper .footer button{
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background: #8F49E2;
+    font-size: 16px;
+    padding: 6px 10px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.wrapper .footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
