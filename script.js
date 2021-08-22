@@ -3,6 +3,7 @@ const addBtn = document.querySelector(".inputField button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".wrapper .footer button");
 
+
 inputBox.onkeyup = () => {
     let userData = inputBox.value; //getting user entered
     // console.log(userData);
@@ -27,6 +28,7 @@ addBtn.onclick = () => {
     localStorage.setItem("New Todo", JSON.stringify(listArr)); //transforming js obj into a json string
     showTasks();
     inputBox.value = "";
+    inputBox.focus();
     addBtn.classList.remove("active");
 }
 
